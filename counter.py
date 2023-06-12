@@ -1,7 +1,7 @@
 import sqlite3
 
 # Connect to the SQLite database file
-connection = sqlite3.connect('by_id_info.db')
+connection = sqlite3.connect('test4.db')
 cursor = connection.cursor()
 
 # Execute a query to get the row count
