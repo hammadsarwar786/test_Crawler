@@ -27,7 +27,7 @@ app = Flask(__name__)
 image_list = []
 
 def preprocess_image(image_data):
-    encoded = image_data.split(",")[1]
+    encoded = image_data.split(",", 1)[1]
     image_bytes = base64.b64decode(encoded)
     image = Image.open(io.BytesIO(image_bytes)).convert('RGB')
     return image
